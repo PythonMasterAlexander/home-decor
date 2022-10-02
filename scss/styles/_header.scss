@@ -1,15 +1,15 @@
+header {
+  background-color: white;
+  display: flex;
+  align-items: baseline;
+  padding: 40px;
+}
+
 header a {
-  color: #414535;
+  color: #000000;
   font-size: 1.3rem;
   text-decoration: none;
   margin-left: 100px;
-}
-
-header {
-  display: flex;
-  align-items: baseline;
-  max-width: 90%;
-  margin: 40px auto;
 }
 
 @media(max-width: 650px) {

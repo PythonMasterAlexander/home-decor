@@ -25,9 +25,7 @@ body {
   flex-direction: column;
   font-family: $body-font-style;
   height: 100%;
-  //background: hsla(58, 87%, 46%, 0.3);
-   background: rgb(255,255,255);
-background: linear-gradient(150deg, rgba(255,255,255,1) 70%, rgba(221,110,15,0.8) 89%);
+  background-image: url("/images/test3.jpg");
 }
 
 .page-wrapper {
