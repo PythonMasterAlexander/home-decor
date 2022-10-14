@@ -1,5 +1,16 @@
 footer {
+  display: flex;
+  justify-content: space-around;
   flex-shrink: 0;
   background-color: white;
   padding: 40px;
+}
+
+.social-media-section {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media-section img {
+  max-width: 30px;
 }
