@@ -52,7 +52,8 @@ main {
 
 .main-image {
   display: block;
-  max-width: 500px; }
+  max-width: 500px;
+  filter: sepa(0.6); }
 
 .btn-container:hover, .btn-container:focus, .btn-container:active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
