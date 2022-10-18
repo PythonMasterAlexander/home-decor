@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('../../fonts/Inconsolata/Inconsolata.otf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inconsolata Bold';
+  src: url('../../fonts/Inconsolata/inconsolata.bold.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans Extra Bold';
+  src: url('../../fonts/open-sans/OpenSans-ExtraBold.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans Semi Bold';
+  src: url('../../fonts/open-sans/OpenSans-Semibold.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../../fonts/karla/Karla-Regular.ttf') format('woff2');
+}
+
+h1, h2, h3 {
+  font-family: 'Inconsolata', Times New Roman, serif;
+}
+
+h1 {
+  font-family: 'Inconsolata Bold', Times New Roman, serif;
+  font-size: 59px;
+  text-decoration: underline;
+  text-decoration-color: $underline-color;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 34px;
+  letter-spacing: 0.25px;
+}
+
+p {
+  font-family: 'Karla', Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+header a, main a {
+  font-family: 'Open Sans Extra Bold', Arial, sans-serif;
+}
+
+header a:hover, footer a:hover {
+  text-decoration: underline;
+  text-decoration-color: $underline-color;
+}
+
+footer a {
+  font-family: 'Open Sans Semi Bold', Arial, sans-serif;
+  text-decoration: none;
+}
+
+footer h3 {
+  text-transform: capitalize;
+}
+
+.btn-container a {
+  font-size: 14px;
+  text-decoration: none;
+  color: $underline-color;
+  font-weight: bold;
+  text-transform: uppercase;
+}
