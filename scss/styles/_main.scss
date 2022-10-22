@@ -1,7 +1,6 @@
 main {
   margin: 50px auto;
-  width: 60%;
-  gap: 50px;
+  width: 70%;
 }
 
 h1 {
@@ -10,6 +9,15 @@ h1 {
 
 h2 {
   margin-bottom: 15px;
+}
+
+.card-information h2 {
+  margin: 20px 0;
+  margin-bottom: 0;
+}
+
+.card-information p {
+  margin: 10px 0;
 }
 
 p {
@@ -22,6 +30,7 @@ p {
 
 .introduction-container {
   display: flex;
+  gap: 50px;
   margin: 50px auto;
 }
 
@@ -29,9 +38,9 @@ p {
   display: block; 
 }
 
-.main-index-page__flex-container {
+.index-page-container {
   display: flex;
-  gap: 50px;
+  gap: 70px;
 }
 
 .btn-container {
@@ -45,19 +54,27 @@ p {
   margin-top: 10%;
 }
 
-.section-container__products-container {
+.card-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 50px;
 }
 
-.product-content-container {
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-  padding: 20px;
-  max-width: 40%;
+.card {
+  display: grid;
 }
 
-.product-content-container img {
-  max-width: 150px;
+.card img {
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px 0;
+}
+
+.information-container h1 {
+  max-width: 500px;
 }
 
 .main-image {
@@ -69,7 +86,109 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#january-test {
-  display: block;
-  width: 50px;
+.text-information {
+  padding-left: 30px;
+  font-style: italic;
 }
+
+.text-information {
+  margin-top: 10px;
+}
+
+.calendar-image {
+  width: 70px;
+}
+
+.text-information--inn {
+  color: green;
+}
+
+.text-information--out {
+  color: $underline-color;
+}
+
+@media(max-width: 1350px) {
+  .introduction-container {
+    justify-content: space-between;
+  }
+
+  .product-image {
+    max-width: 300px;
+  }
+
+  .main-index-page {
+    width: 70%;
+  }
+}
+
+@media(max-width: 1065px) {
+  .main-index-page {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .introduction-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-products-page {
+    width: 90%;
+  }
+
+  .information-container p {
+    margin: 0 auto;
+  }
+
+  .main-image {
+    max-width: 300px;
+  }
+
+  .card-container {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 700px) {
+  h1, h2, h3 {
+    text-align: center;
+  }
+
+  .index-page-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-container {
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+
+  .main-image {
+    display: none;
+  }
+
+  .product-image {
+    max-width: 300px;
+  }
+
+  .btn-container-products-page {
+    margin: 20px 0; 
+  }
+}
+
+@media(max-width: 400px) {
+  header {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .product-image {
+    max-width: 150px;
+  }
+

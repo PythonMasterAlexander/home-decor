@@ -11,15 +11,22 @@ header a {
   margin-left: 100px;
 }
 
-@media(max-width: 650px) {
+.card-header {
+  background: 0;
+}
+
+@media(max-width: 700px) {
   header {
     flex-direction: column;
-    align-self: center;
+    align-items: center; 
   }
 
-  nav a {
-    display: block;
-    margin-left: 50%;
-    margin-top: 10px;
+  nav {
+    display: none;
   }
+}
+
+.card-header {
+  padding: 0;
+  display: block;
 }
