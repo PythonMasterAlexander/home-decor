@@ -1,0 +1,312 @@
+BASIC COMANDS + FIRST COMANDS TO LEARN
+---->>
+
+	:!./<filename> to run a script in vim
+
+
+	j - To go down
+
+
+	k - To go up
+
+
+	h - To go right
+
+
+	l - To go left
+
+
+	:q! - To quit vim
+
+
+	:wq - To save and quit
+
+
+	:w - To save without quiting
+
+
+	yy - To Copy an entire line
+
+
+	x - To delete a character
+
+
+	i - To go into insert mode
+
+
+	p - To paste the line under the cursor
+
+
+	dd - To delete a line
+
+
+	To undo a move --> Press u 
+
+
+	b - To jump a word to the left
+
+
+	w - To jump a word to the right
+
+
+	To get into line mode --> V (UpperCase) this will choose the hole line in visual mode, and now by going down or up with j and k , the mode will choose the hole line in visual mode 
+
+
+	To get into visual mode with the cursor only --> v 
+
+
+	To delete one word forward --> d + w
+
+
+	To delete one word backward --> b + w
+
+
+	To jump from word to word but only on the last letter in the word --> e
+
+
+SECOND COMANDS TO LEARN
+---->>
+
+	To get into writing on the line under in insert mode --> o (This will create a new line and you will be in insert mode)
+
+
+	To get into writing on the line above the cursor in insert mode --> O  (This will create a new line and you will be in insert mode)
+
+
+	To copy a line (yy on the line of your cursor) and paste above the cursor (oposite of pasting down below of the cursor with p) --> shift + p
+
+
+	To go into insert mode one step in front of the cursor --> a
+
+
+	To go into insert mode to the beginning of a line --> shift + I
+
+
+	To go into insert mode to the last of a line --> shift + a
+
+
+	To go into command mode, this lets you search for words or letters or symbols --> / follow by your search 
+
+
+	Then after typing inn a search word and press enter, you now can jump from word to word up --> n
+
+
+	Then after typing inn a search word and press enter, you now can jump from word to word down --> shift n
+
+
+	When after typing in a search word and press enter, if you go to another word you want and then press --> * , this will jump down to the next word that is the same word, go up press --> #
+
+
+	shift + l - To go to the bottom of the window
+
+
+	shift + h - To go to the top of the window
+
+
+
+----------------------------------------------------->>>
+THIRDS COMANDS TO LEARN
+
+
+	Jump to a character of your choosing --> f + <the character you want to jump to> 
+
+	Jump up to and right before a character of your choosing --> t + <the character you want to jump to but right before> 
+
+	The two same commands above but only back jumping instead of jumping forward --> F + <character> , and T + <character>
+
+----------------------------------------------------->>>>
+FOURTH COMANDS TO LEARN VERTICAL
+
+	jump to a specific line number --> : + <line number you want> + ENTER
+
+----------------------------------------------------->>>>
+VIM DEBUGER COMMANDS
+
+	To clear all errors -> SPC + e + c
+
+	To toggle syntax checker --> SPC + t + s
+
+----------------------------------------------------->>>>
+Work on Vim/nvim setup in the terminal
+
+	Starting point in the terminal are in the user folder.
+
+	To access nvim in terminal -> cd .config/nvim
+
+	To access Nvim configuration file inside nvim itself -> SPC + f + v + d	
+
+
+----------------------------------------------------->>>
+TMUX + VIM WINDOW MANAGER
+
+	To open tmux --> tmux
+
+	To quit tmux --> exit
+
+	Start tmux session with a name for the session --> tmux new -sessionName 
+
+	Open a new pane to the right --> Ctrl + b + % 
+
+	To change between panes --> Ctrl + b + arrow keys 
+
+	To create a new pane horizontally --> Ctrl + b + "
+
+	To create a new pane vertical --> Ctrl + b + %
+
+	To exit a pane --> exit
+	
+	To create a new window --> Ctrl + b + c
+
+	To change windows --> Ctrl + b + number of window you want to change to (In the bottom in the green line there are you windows showing with a Asterix on the currently )
+
+	To rename a window --> Ctrl + b + , then type the name of your window
+
+	To exit a window --> exit
+
+	To detach a session in tmux --> Ctrl + b + d (This will put you back in normal terminal mode and not in tmux anymore)
+
+	To view your tmux sessions running in the background after you exited your session --> tmux ls
+
+	To jump into the session you have running --> tmux + attach + -t + 0(0 is the name of the session if you have not made any other name for it)
+
+	To rename a session when in terminal --> tmux + rename-session + -t + 0 + name of session , ( 0 is the session you are renaming)
+
+	To kill a session --> tmux + kill-session + -t + name of session
+
+	To show the time -- Ctrl + b + t
+
+VIM FILE PATHS
+--------------------------------------------------->>>>
+	When inside vim use this command to find file paths --> :echo stdpath('filename you want to find') 
+
+	When in finder and want to show hidden directories and files --> Command + Shift + .
+
+	nvim init.vim config file path on macbok --> /Users/alexanderhardeland/.config/nvim OR use ~/.config/nvim
+
+EMMET COMMANDS
+--------------------------------------------------->>>>
+
+	To get the html page template --> type html:5 then press , + ,
+
+	To insert a tag --> <write name of tag> + CTRL + y + ,	
+
+	To insert tag with a class --> <write name of tag + . + class name> Example div.page-wrapper + , + ,
+
+	To insert tag with a id --> Same as above only change the . with #
+	
+	To nest one or more tags --> div>ul>li + y + y
+
+
+---------------------------------------------------->>>
+NODE.JS IN TERMINAL
+
+	To go into node in terminal -> node
+
+	To exit from node in terminal -> process.exit(0);
+
+	If you need to go to the next line when writing a multiline comment -> after typing { press enter and it will automatic change to the next line for you with the indention
+
+---------------------------------------------------->>>
+Arch Linux
+	
+
+	root password 1234
+	user alexander password katrine
+	Never use makepkg as the root user, only as a user
+
+	Use YAY to install packages from the AUR
+		Install a package --> yay -S <name of package>
+		Delete a package --> yay -Rns <name of package> this removes package + all dependencies that came with the package.
+		System update --> yay -Syu
+		Search for a package on the AUR that you are looking for --> yay -Ss <package name>
+		List of packages that need a update --> yay -Pu
+		List of dependencies that are not being used and should be deleted --> yay -Yc
+
+	Connect to internet with cable
+		plug in cable
+		Command --> ip address show 
+		Command --> ip link set dev <name of network> up
+		Command --> dhcpch <name of network>
+		Command --> ping google.com NB This command is for testing the connection
+
+	Connect to a wifi
+		Command --> nmcli device wifi list	
+		Command --> nmcli device connect <wifi network> password <password> 
+
+	How to power off
+		Command --> sudo systemctl poweroff
+	To Reboot 
+		Command --> sudo systemctl reboot
+
+	To see what you have enabled on your system 
+		Command --> systemctl list-unit-files --state=enabled
+
+	Use neofetch to see info about your info printed to the screen
+		Command --> neofetch
+
+	To set keyboard to Norwegian layout 
+		Command --> setxkbmap no NB this command only temporary sets the keyboard layout to a Norwegian one
+
+	i3 Commands to use. Super key = win key
+		To open a terminal --> win + ENT
+		To quit a window --> win + shift + q
+		To search for programs to open --> win + d + type in any program you want to open
+		To put in full screen --> win + f
+
+	Switch users
+		Command --> su <name of user you are switching to>
+
+	Fuzzy finder puts you into a menu where you can search for any AUR package
+		Command to open --> fpf 
+		Command to quit --> CTRL + c
+
+	Unresponsive Terminal
+		Command ctrl + c will usually stopp anything you have done to make the terminal stopp. Then check or delete any work done
+
+	How to update arch
+		Command sudo pacman -Syu
+
+	Uninstall Neovim on arch linux
+		sudo rm /usr/local/bin/nvim
+		sudo rm -r /usr/local/share/nvim/
+
+
+---------------------------------------------------->>>
+Terminal Commands
+
+---------------------------------------------------->>>
+GitHub Commands and Information
+
+	What is git version control?
+
+	Git id’s in your git commit repository uses SHA-1 
+	Git version controls lets you keep control over changes done on files. If you have a text file and you change it and then change it again, git allows for going back to the first change.
+	Git Head pointer. The head pointer is a reference variable, the purpose is to point to the current tip in the repository. The tip of the repository is what was last checked out. It
+	points to the parent of the next commit where writing commits takes place.
+	
+
+	To install git on your Mac —> brew install git
+	To see where you can find git —> which git
+
+	First off, when working in GitHub don't do work in the main branch unless you are merging the work from another branch into the finished code on the main branch.
+	This branch should be called develop.
+ 
+	In GitHub a pull request lets you compare two branches and then merge them. Also if you have a collaborator reviewing your code you can ask him to make a review.
+	This is great for developer developing and reviewing each others code. With a pull request you can check between two branches. 
+
+	Create a new branch
+		To create a new branch and jump into the new branch --> git checkout -b <branch name>
+		To just create a new branch and don't switch to it --> git branch <branch name>
+		Switch to the new branch later --> git checkout <branch name>
+
+	After doing a pull request on GitHub, the local work on your machine are not up to date with the latest change in the GitHub repository. So we need to make it so the local are up to date with your files on GitHub.
+	You can use two commands for this. The first one takes your local repository and pull the GitHub repository into your local project and makes it up to date. The other command only show the different between the two of them
+	
+		To make the local be the same as the GitHub version --> git pull origin main
+		To only see the different between the two --> git fetch origin main
+	
+	Git branch
+		To create a new branch and then change into the branch --> git checkout -b <name of new branch >
+		To see what branches you have --> git branch -a
+		If you want to change into another git branch --> git checkout <name of branch you are changing into>
+		To delete a branch, first change to your main/developer branch then --> git branch -d <branch name>
