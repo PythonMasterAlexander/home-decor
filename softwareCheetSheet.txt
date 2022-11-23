@@ -274,6 +274,9 @@ Terminal Commands
 	How to remove a dir with content
 		rm -rf <name of dir/file>
 
+	How to create a new ssh key
+		ssh-keygen -t -C <name of your email address>
+
 ---------------------------------------------------->>>
 GitHub Commands and Information
 
