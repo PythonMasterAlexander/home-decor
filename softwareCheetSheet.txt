@@ -209,9 +209,6 @@ NODE.JS IN TERMINAL
 ---------------------------------------------------->>>
 Arch Linux
 	
-
-	root password 1234
-	user alexander password katrine
 	Never use makepkg as the root user, only as a user
 
 	Use YAY to install packages from the AUR
@@ -273,6 +270,9 @@ Arch Linux
 
 ---------------------------------------------------->>>
 Terminal Commands
+
+	How to remove a dir with content
+		rm -rf <name of dir/file>
 
 ---------------------------------------------------->>>
 GitHub Commands and Information
